@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty-Hands</title>
+    <link rel="stylesheet" href="/CSS/boot.css">
+    <link rel="stylesheet" href="/CSS/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+    <title>Subscription Page</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .subscription-model {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            flex: 1;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            color: ##212529;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card ul li {
+            margin: 0.5rem 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #212529;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .benefits {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .benefits p {
+            margin: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .subscription-model {
+                flex-wrap: wrap;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+        h1 {
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerr">
+        <header>
+            <nav class="navbar fixed-top">
+                <div>
+                    <img src="/image/U-craft.png" alt="" height="95px">
+                </div>
+                <div>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="home.html">HOME</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="shop.html">SHOP</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Exhibition.html">EXHIBITION</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Aboutus.html">ABOUT US</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="contact.html">CONTACT</a></li>
+                        <li class="list-inline-item me-4"><img src="/image/searchpurp.png" height="20px"id="search" alt=""><input type="text" id="sbox"></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="cart.html"><img src="/image/trolley-cart.png" height="20px" alt=""></a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="login.html">Sign-up/Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div class="mt-5 pt-4">
+        <div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+    <div class="container">
+        <div class="subscription-model">
+            
+            <!-- User Subscription Card -->
+            <div class="card">
+
+                <h2>User Subscription</h2>
+                <p>Perfect for individual users</p>
+                <ul>
+                    <li>Access to premium content</li>
+                    <li>Ad-free experience</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="payment.html" class="btn">Subscribe as User</a>
+            </div>
+
+            <!-- Seller Subscription Card -->
+            <div class="card">
+                <h2>Seller Subscription</h2>
+                <p>Ideal for businesses and sellers</p>
+                <ul>
+                    <li>Dedicated seller dashboard</li>
+                    <li>Advanced analytics</li>
+                    <li>Priority listing in marketplace</li>
+                </ul>
+                <a href="payment.html" class="btn">Subscribe as Seller</a>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <h2>Why Choose Our Subscription Plans?</h2>
+            <p>Our subscription plans are designed to offer you maximum value and support for your needs.</p>
+            <p>Enjoy premium features, exclusive access, and top-notch service tailored to your requirements.</p>
+        </div>
+    </div>
+</body>
+</html>

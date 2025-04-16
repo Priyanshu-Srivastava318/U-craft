@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty-Hands</title>
+    <link rel="stylesheet" href="/CSS/boot.css">
+    <link rel="stylesheet" href="/CSS/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            margin-top: 10px;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgb(247, 245, 243);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #008080;
+            text-align: center;
+        }
+        h2 {
+            color: navy;
+        }
+        .exhibition-details {
+            margin-bottom: 2rem;
+        }
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .detail-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #0c2c4c;
+        }
+        .detail-card:hover {
+            transform: scale(1.03);
+        }
+        .detail-card h3 {
+            color: #151513;
+            margin-bottom: 1rem;
+        }
+        .detail-card p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .detail-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            background-color: #0c2c4c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #648b53;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerr">
+
+        <header>
+            <nav class="navbar fixed-top">
+                <div>
+                    <img src="/image/U-craft.png" alt="" height="95px">
+                </div>
+                <div>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="home.html">HOME</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="shop.html">SHOP</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Exhibition.html">EXHIBITION</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Aboutus.html">ABOUT US</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="contact.html">CONTACT</a></li>
+                        <li class="list-inline-item me-4"><img src="/image/searchpurp.png" height="20px"id="search" alt=""><input type="text" id="sbox"></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="cart.html"><img src="/image/trolley-cart.png" height="20px" alt=""></a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="login.html">Sign-up/Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mt-5 pt-4">
+                <div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+    <header>
+        <h1>Art Exhibitions</h1>
+    </header>
+    <div class="container">
+        <h2>Explore the World of Art</h2>
+        <div class="exhibition-details">
+            <div class="details">
+                <div class="detail-card">
+                    <img src="/image/Untitled design.png" alt="Exhibition 1">
+                    <h3>THE MODERN ART EXHIBITION</h3>
+                    <p><strong>Date:</strong> 15th Jan 2024</p>
+                    <p><strong>Location:</strong> The Art Hall, Downtown</p>
+                    <p><strong>Description:</strong> A stunning collection of modern art from renowned artists worldwide.</p>
+                </div>
+                <div class="detail-card">
+                    <img src="/image/VRT.jpeg" alt="Exhibition 2">
+                    <h3>LET'S EXPLORE ART  </h3>
+                    <p><strong>Date:</strong> 25th Jan 2024</p>
+                    <p><strong>Location:</strong> Virtual Event</p>
+                    <p><strong>Description:</strong> Experience the beauty of impressionist art online with live discussions and Q&A.</p>
+                </div>
+                <div class="detail-card">
+                    <img src="/image/art exhib.jpeg" alt="Exhibition 3">
+                    <h3>ANCIENT ARTISTRY </h3>
+                    <p><strong>Date:</strong> 5th Feb 2024</p>
+                    <p><strong>Location:</strong> City Museum, Art Wing</p>
+                    <p><strong>Description:</strong> Dive into the history of abstract art with rare pieces on display.</p>
+                </div>
+                <div class="detail-card">
+                    <img src="/image/ex.jpeg" alt="Exhibition 4">
+                    <h3>EXHIBITION OF CRAFT</h3>
+                    <p><strong>Date:</strong> 10th Feb 2024</p>
+                    <p><strong>Location:</strong> Virtual Event</p>
+                    <p><strong>Description:</strong> A showcase of emerging digital artists and their groundbreaking creations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="payment.html" class="button">Join Exhibition (On-Site)</a>
+            <a href="payment.html" class="button">Join Exhibition (Online)</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 E-Kart. All Rights Reserved. | Art is life!</p>
+    </footer>
+</body>
+</html>

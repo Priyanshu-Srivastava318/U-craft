@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty-Hands</title>
+    <link rel="stylesheet" href="/CSS/boot.css">
+    <link rel="stylesheet" href="/CSS/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            margin-top: 15px;
+            
+            color: rgb(72, 60, 60);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #092d53;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #ddd;
+        }
+        .tab {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        .tab.active {
+            border-color: #4b1750;
+            font-weight: bold;
+        }
+        .form-container {
+            display: none;
+        }
+        .form-container.active {
+            display: block;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, button {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #481520;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #92832e;
+        }
+        .subscription-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #0a0a0a;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .subscription-btn:hover {
+            background-color: #88e1ce;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="containerr">
+
+        <header>
+            <nav class="navbar fixed-top">
+                <div>
+                    <img src="/image/U-craft.png" alt="" height="95px">
+                </div>
+                <div>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="home.html">HOME</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="shop.html">SHOP</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Exhibition.html">EXHIBITION</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Aboutus.html">ABOUT US</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="contact.html">CONTACT</a></li>
+                        <li class="list-inline-item me-4"><img src="/image/searchpurp.png" height="20px"id="search" alt=""><input type="text" id="sbox"></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="cart.html"><img src="/image/trolley-cart.png" height="20px" alt=""></a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="login.html">Sign-up/Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mt-5 pt-4">
+                <div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+    <header>
+        <h1>Login / Sign-Up</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to Our E-Commerce Platform</h2>
+        <div class="tabs">
+            <div class="tab active" data-tab="customer-login">Customer Login</div>
+            <div class="tab" data-tab="seller-login">Seller Login</div>
+            <div class="tab" data-tab="sign-up">Sign-Up</div>
+        </div>
+        
+        <!-- Customer Login Form -->
+        <div class="form-container active" id="customer-login">
+            <form action="/customer-login" method="POST">
+                <label for="customer-email">Email Address:</label>
+                <input type="email" id="customer-email" name="email" placeholder="Enter your email" required>
+
+                <label for="customer-password">Password:</label>
+                <input type="password" id="customer-password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login as Customer</button>
+            </form>
+        </div>
+
+        <!-- Seller Login Form -->
+        <div class="form-container" id="seller-login">
+            <form action="/seller-login" method="POST">
+                <label for="seller-email">Email Address:</label>
+                <input type="email" id="seller-email" name="email" placeholder="Enter your email" required>
+
+                <label for="seller-password">Password:</label>
+                <input type="password" id="seller-password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login as Seller</button>
+            </form>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <div class="form-container" id="sign-up">
+            <form action="/sign-up" method="POST">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                <label for="user-type">Sign-Up As:</label>
+                <select id="user-type" name="user-type" required>
+                    <option value="customer">Customer</option>
+                    <option value="seller">Seller</option>
+                </select>
+
+                <button type="submit">Sign-Up</button>
+            </form>
+        </div>
+
+        <!-- Add Subscription Plans Button -->
+        <div id="subscription-container">
+            <a href="subscription.html" class="subscription-btn">Add Subscription Plans</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty-Hands</title>
+    <link rel="stylesheet" href="/CSS/boot.css">
+    <link rel="stylesheet" href="/CSS/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f4f8;
+        }
+        header {
+            margin-top: 15px;
+            background-color: #212529;
+            color: rgb(73, 169, 163);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: #212529;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            color: #37a47a;
+            margin-bottom: 1.5rem;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 1rem;
+            position: relative;
+        }
+        .category {
+            background-color: #ffe0b2;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #3d5d22;
+            transition: background-color 0.3s;
+        }
+        .category:hover {
+            background-color: #ffcc80;
+        }
+        .customization-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .option {
+            flex: 1 1 calc(50% - 1rem);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .option img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .option h3 {
+            margin: 1rem 0;
+            color: #333;
+        }
+        .option p {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+        .option button {
+            
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            background-color: #ad965a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 2rch;
+        }
+        .option button:hover {
+            background-color: #181413;
+        }
+        .products-section {
+            margin-top: 2rem;
+        }
+        .products-section h3 {
+            color: #256c6a;
+            margin-bottom: 1rem;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+        .product {
+            flex: 1 1 calc(33% - 1rem);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h4 {
+            margin: 1rem 0;
+            color: #333;
+        }
+        .product p {
+            color: #555;
+            margin: 0.5rem 0;
+        }
+        .product button {
+            padding: 0.5rem 1rem;
+            background-color: #9dad43;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #181514;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerr">
+
+        <header>
+            <nav class="navbar fixed-top">
+                <div>
+                    <img src="/image/U-craft.png" alt="" height="95px">
+                </div>
+                <div>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="home.html">HOME</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="shop.html">SHOP</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Exhibition.html">EXHIBITION</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Aboutus.html">ABOUT US</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="contact.html">CONTACT</a></li>
+                        <li class="list-inline-item me-4"><img src="/image/searchpurp.png" height="20px"id="search" alt=""><input type="text" id="sbox"></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="cart.html"><img src="/image/trolley-cart.png" height="20px" alt=""></a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="login.html">Sign-up/Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mt-5 pt-4">
+                <div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+    <header>
+        <h1>Product Customization</h1>
+    </header>
+    <div class="container">
+        <h2>Create Your Personalized Product</h2>
+        <div class="categories">
+            <div class="category" data-category="painting"><a href="shop.html">Paintings</a></div>
+            <div class="category" data-category="sculpture"><a href="shop.html">Explosion Boxes</a></div>
+            <div class="category" data-category="jewelry"><a href="shop.html">Polaroids</a></div>
+            <div class="category" data-category="decor"> <a href="shop.html">Scrapbook</a></div>
+        </div>
+        <div class="customization-options">
+            <div class="option" data-category="painting">
+                <img src="/image/color.jpeg" alt="Custom Color" height="250px">
+                <h3>Custom Colors</h3>
+                <p>Choose from a wide range of colors to match your taste.</p>
+                <button onclick="window.location.href='add-to-cart.html'">Select Colors</button>
+            </div>
+
+            <div class="option" data-category="painting">
+                <img src="/image/frame.jpeg" alt="Engraving">
+                <h3>Custom Frame</h3>
+                <p>Select a frame style to complement your artwork.</p>
+                <button onclick="window.location.href='add-to-cart.html'">Choose Frame</button>
+            </div>
+
+            <div class="option" data-category="sculpture">
+                <img src="/image/material.jpeg" alt="Material Choice">
+                <h3>Material Choice</h3>
+                <p>Select the material that best suits your needs and style.</p>
+                <button onclick="window.location.href='add-to-cart.html'">Choose Material</button>
+            </div>
+
+            <div class="option" data-category="jewelry">
+                <img src="/image/gemstones.jpeg" alt="Size Adjustment">
+                <h3>Gemstone Selection</h3>
+                <p>Pick the perfect gemstones to add elegance to your jewelry.</p>
+                <button onclick="window.location.href='add-to-cart.html'">Select Gemstones</button>
+            </div>
+
+            <div class="option" data-category="decor">
+                <img src="/image/pattern.jpeg.crdownload" alt="Customization">
+                <h3>Pattern Design</h3>
+                <p>Choose unique patterns for your home decor items.</p>
+                <button onclick="window.location.href='add-to-cart.html'">Customize Pattern</button>
+            </div>
+        </div>
+
+        <div class="products-section">
+            <h3>Explore More Products</h3>
+            <div class="products">
+                <div class="product">
+                    <img src="/image/prod1.jpeg.crdownload" alt="Product 1">
+                    <h4>Artistic Painting</h4>
+                    <p>A masterpiece to enhance your space.</p>
+                    <button onclick="window.location.href='add-to-cart.html'">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/image/prod2.jpeg.crdownload" alt="Product 2">
+                    <h4>Elegant Sculpture</h4>
+                    <p>A perfect addition to your collection.</p>
+                    <button onclick="window.location.href='add-to-cart.html'">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/image/prod3.jpeg" alt="Product 3">
+                    <h4>Customized Jewelry</h4>
+                    <p>Personalized jewelry for every occasion.</p>
+                    <button onclick="window.location.href='add-to-cart.html'">Add to Cart</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
